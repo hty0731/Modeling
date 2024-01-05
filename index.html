@@ -555,7 +555,7 @@ day</p></li>
 <pre class="r"><code class="hljs"><span class="hljs-comment"># clean up the table</span>
 <span class="hljs-keyword">library</span>(dplyr)</code></pre>
 <pre><code class="hljs">## 
-## 载入程辑包：'dplyr'</code></pre>
+## 'dplyr'</code></pre>
 <pre><code class="hljs">## The following objects are masked from 'package:stats':
 ## 
 ##     filter, lag</code></pre>
@@ -564,7 +564,7 @@ day</p></li>
 ##     intersect, setdiff, setequal, union</code></pre>
 <pre class="r"><code class="hljs"><span class="hljs-keyword">library</span>(lubridate)</code></pre>
 <pre><code class="hljs">## 
-## 载入程辑包：'lubridate'</code></pre>
+## 'lubridate'</code></pre>
 <pre><code class="hljs">## The following objects are masked from 'package:base':
 ## 
 ##     date, intersect, setdiff, union</code></pre>
@@ -613,7 +613,7 @@ values and TF-IDF values for each video.</p>
 <pre class="r"><code class="hljs"><span class="hljs-comment"># Create a corpus of the reviews from the "title" using library(tm).</span>
 <span class="hljs-comment"># Examine the review in document “617”.</span>
 <span class="hljs-keyword">library</span>(tm)</code></pre>
-<pre><code class="hljs">## 载入需要的程辑包：NLP</code></pre>
+<pre><code class="hljs">## NLP</code></pre>
 <pre class="r"><code class="hljs">corpus = Corpus(VectorSource(data_clean$title))
 corpus[[<span class="hljs-number">617</span>]][<span class="hljs-number">1</span>]</code></pre>
 <pre><code class="hljs">## $content
@@ -1778,7 +1778,7 @@ rmse4 = sqrt(mean((pred4-test_3$num_trending_days)^<span class="hljs-number">2</
 <h5>Visualize the best linear model result</h5>
 <pre class="r"><code class="hljs"><span class="hljs-keyword">library</span>(ggplot2)</code></pre>
 <pre><code class="hljs">## 
-## 载入程辑包：'ggplot2'</code></pre>
+## 'ggplot2'</code></pre>
 <pre><code class="hljs">## The following object is masked from 'package:NLP':
 ## 
 ##     annotate</code></pre>
@@ -1840,7 +1840,7 @@ top_coef</code></pre>
 <h4>Method 3: use Ridge or Lasso regression</h4>
 <pre class="r"><code class="hljs"><span class="hljs-comment"># Method 3: use Ridge or Lasso regression</span>
 <span class="hljs-keyword">library</span>(glmnet)</code></pre>
-<pre><code class="hljs">## 载入需要的程辑包：Matrix</code></pre>
+<pre><code class="hljs">## Matrix</code></pre>
 <pre><code class="hljs">## Loaded glmnet 4.1-7</code></pre>
 <pre class="r"><code class="hljs">X = model.matrix(num_trending_days~., data = train_3)
 y = train_3$num_trending_days
